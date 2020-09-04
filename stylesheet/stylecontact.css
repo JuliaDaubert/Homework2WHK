@@ -1,10 +1,11 @@
 /* CSS Style Sheet for Portfolio and contact*/
 
   /* Background Image*/
-  body 
-  {
-    background-image: url("images/monstera.png");
-  }
+
+    body { 
+      background-image: url("../images/monstera.png");  
+  } 
+  
 
 
   /* Size for h1 - Navbar */
