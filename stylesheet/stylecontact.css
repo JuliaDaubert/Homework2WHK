@@ -1,0 +1,106 @@
+/* CSS Style Sheet for Portfolio and contact*/
+
+  /* Background Image*/
+  body 
+  {
+    background-image: url("images/monstera.png");
+  }
+
+
+  /* Size for h1 - Navbar */
+  h1
+  {
+    font-size: 30px;
+  }
+  
+
+  /* Style inputs with type="text", select elements and textareas */
+  input[type=text], select, textarea 
+  {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] 
+  {
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover 
+  {
+    background-color: darkslategray;
+  }
+  
+
+  /* Add a background color and some padding around the form */
+  .container 
+  {
+    border-radius: 5px;
+    padding: 20px;
+    padding-bottom: 20px;
+  }
+
+
+  /* Colour and Padding for h2 */
+  h2 
+  {
+    color: darkslategrey ;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-family: 'Caveat Brush', cursive;
+  }
+
+
+  /* Background and Style for wrapper*/
+  .wrapper
+  {
+    background-color: rgba(218, 223, 225, 0.7);
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 8px; 
+    height: auto; 
+    width: 100%;
+  }
+
+
+    /* Footer Style and Colour*/
+    .page-footer 
+    {
+      background-color: darkslategray;
+      color: #fff;
+      text-align-last: center;
+      font-size: 20px;
+      position: fixed;
+      bottom: 0;
+ }
+
+
+   /* Padding for form*/
+  .form
+  {
+    padding-bottom: 20px;
+  }
+
+
+  /* Padding for images*/
+  .img
+  {
+    padding-bottom: 20px;
+  }
+
