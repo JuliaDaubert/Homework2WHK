@@ -6,14 +6,20 @@
       background-image: url("../images/monstera.png");  
   } 
   
-
+p {
+  text-align: center;
+}
 
   /* Size for h1 - Navbar */
-  h1
-  {
+  h1 {
     font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: silver;
   }
   
+  label {
+    color: silver;
+  }
 
   /* Style inputs with type="text", select elements and textareas */
   input[type=text], select, textarea 
@@ -30,7 +36,7 @@
   
 
   /* Style the submit button with a specific background color etc */
-  input[type=submit] 
+ .btn
   {
     background-color: gray;
     color: white;
@@ -42,7 +48,7 @@
   
 
   /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover 
+  .btn:hover 
   {
     background-color: darkslategray;
   }
@@ -60,18 +66,18 @@
   /* Colour and Padding for h2 */
   h2 
   {
-    color: darkslategrey ;
+    color: silver ;
     border-bottom: 3px solid black;
     padding-bottom: 20px;
     padding-top: 10px;
-    font-family: 'Caveat Brush', cursive;
+    font-family: 'Raleway', sans-serif;
   }
 
 
   /* Background and Style for wrapper*/
   .wrapper
   {
-    background-color: rgba(218, 223, 225, 0.7);
+    background-color: rgba(66, 74, 77, 0.9);
     margin-top: 40px;
     padding: 20px;
     border-radius: 8px; 
@@ -89,6 +95,7 @@
       font-size: 20px;
       position: fixed;
       bottom: 0;
+      font-family: 'Raleway', sans-serif;
  }
 
 
@@ -99,9 +106,45 @@
   }
 
 
-  /* Padding for images*/
-  .img
-  {
-    padding-bottom: 20px;
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+
+  
+  .flip-card-back {
+    background-color: darkslategrey;
+    color: silver;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
   }
 
+  img {
+    width: 100%;
+    height: 100%;
+  }
