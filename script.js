@@ -15,6 +15,7 @@ function sendMail() {
 };
 
 
+
 //Click event for img
 
 $(".holidayplanner").click(function(){
@@ -26,7 +27,7 @@ function redirectHolidayplanner() {
     window.open("https://grahamelphick.github.io/holiday-weather-planner/")
 }
 
-$("#dayplanner").click(function(){
+$(".dayplanner").click(function(){
     console.log("hld click");
     redirectDayPlanner();
 });
@@ -36,7 +37,7 @@ function redirectDayPlanner() {
 }
 
 
-$("#timedQuiz").click(function(){
+$(".timedQuiz").click(function(){
     console.log("hld click");
     redirecttimedQuiz();
 });
